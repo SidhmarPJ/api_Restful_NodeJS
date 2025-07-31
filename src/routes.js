@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const routes = new Router();
 
-const customers = require("./app/controllers/CustomersControllers");
+const customers = require("./app/controllers/CustomersController");
 
 routes.get("/customers", customers.index);
 routes.get("/customers/:id", customers.show);
